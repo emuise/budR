@@ -1,18 +1,25 @@
-# Hello, world!
-#
-# This is an example function named 'hello' 
-# which prints 'Hello, world!'.
-#
-# You can learn more about package authoring with RStudio at:
-#
-#   http://r-pkgs.had.co.nz/
-#
-# Some useful keyboard shortcuts for package authoring:
-#
-#   Install Package:           'Ctrl + Shift + B'
-#   Check Package:             'Ctrl + Shift + E'
-#   Test Package:              'Ctrl + Shift + T'
-
-hello <- function() {
-  print("Hello, world!")
+# set up keys ----
+library(tidyverse)
+clean_name <- function(string) {
+  str_split(string, "\\.")[[1]][1]
 }
+
+keys_here <- "E:/Sync/Masters/analysis_03_decay/keys"
+
+key_locs <- list.files(keys_here,
+                       full.names = TRUE)
+
+key_names <- map(list.files(keys_here), clean_name)
+
+keys <- map(key_locs,
+            read_csv,
+            col_types = cols())
+
+names(keys) <- key_names
+
+keys$vlce <- keys$vlce %>%
+  filter(class_val != 0)
+
+rm(keys_here, key_locs, key_names, clean_name)
+
+usethis::use_data(keys)
