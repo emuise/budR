@@ -17,6 +17,5 @@ VarDHI,Variation DHI,10000,NA,Variation DHI
 DEM,Elevation,1,m,Elevation (m)
 clim_MCMT,Mean Coldest Month Temperature,1,°C,Mean Coldest Month Temperature (°C)
 clim_MWMT,Mean Warmest Month Temperature,1,°C,Mean Warmest Month Temperature (°C)
-clim_MCMT,Mean Coldest Month Temperature,1,°C,Mean Coldest Month Temperature (°C)
 clim_MAT,Mean Annual Temperature,1,°C,Mean Annual Temperature (°C)
 clim_MAP,Mean Annual Precipitation,1,mm,Mean Annual Precipitation (mm)
