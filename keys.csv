@@ -11,9 +11,9 @@ loreys_height,Lorey's Height,1000,m,Lorey's Height (m)
 elev_mean,Mean Elevation,1000,m,Mean Elevation (m)
 elev_stddev,Elevation Standard Deviation,1000,m,Elevation Standard Deviation (m)
 elev_p95,Canopy Height,1000,m,Canopy Height (m)
-CumDHI,Cumulative DHI,10000,NA,Cumulative DHI
-MinDHI,Minimum DHI,10000,NA,Minimum DHI
-VarDHI,Variation DHI,10000,NA,Variation DHI
+CumDHI,Cumulative DHI,1000,NA,Cumulative DHI
+MinDHI,Minimum DHI,1000,NA,Minimum DHI
+VarDHI,Variation DHI,1000,NA,Variation DHI
 DEM,Elevation,1,m,Elevation (m)
 clim_MCMT,Mean Coldest Month Temperature,1,°C,Mean Coldest Month Temperature (°C)
 clim_MWMT,Mean Warmest Month Temperature,1,°C,Mean Warmest Month Temperature (°C)
